@@ -1,0 +1,33 @@
+template:
+  name: bb4
+  identifier: bb4
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: KanikaTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: df
+          identifier: df
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    timeout: 10m
+                    type: ShellScript
+                    spec:
+                      shell: Bash
+                      onDelegate: true
+                      source:
+                        type: Inline
+                        spec:
+                          script: v1
+                      environmentVariables: []
+                      outputVariables: []
+                    name: ds
+                    identifier: ds
+          tags: {}

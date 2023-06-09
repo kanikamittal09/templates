@@ -1,0 +1,19 @@
+template:
+  name: stgae
+  identifier: stgae
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: KanikaTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: hj
+              identifier: hj
+              template:
+                templateRef: bb
+                versionLabel: v1

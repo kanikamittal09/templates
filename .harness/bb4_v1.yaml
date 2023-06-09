@@ -17,17 +17,16 @@ template:
             execution:
               steps:
                 - step:
-                    timeout: 10m
-                    type: ShellScript
-                    spec:
-                      shell: Bash
-                      onDelegate: true
-                      source:
-                        type: Inline
+                    name: xc
+                    identifier: xc
+                    template:
+                      templateRef: bb
+                      versionLabel: v1
+                      templateInputs:
+                        type: ShellScript
                         spec:
-                          script: v1
-                      environmentVariables: []
-                      outputVariables: []
-                    name: ds
-                    identifier: ds
+                          source:
+                            type: Inline
+                            spec:
+                              script: <+input>
           tags: {}

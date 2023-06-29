@@ -1,0 +1,33 @@
+template:
+  name: defaultwfsa
+  identifier: defaultwfsa
+  versionLabel: v2
+  type: Stage
+  projectIdentifier: kanikatest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: afa
+              identifier: afa
+              template:
+                templateRef: featurerepo1
+                versionLabel: v1
+                gitBranch: new
+                templateInputs:
+                  type: ShellScript
+                  spec:
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo <+stage.variables.s1>
+    variables:
+      - name: s1
+        type: String
+        description: ""
+        required: false
+        value: <+input>

@@ -1,0 +1,22 @@
+inputSet:
+  name: fhdfh
+  identifier: fhdfh
+  orgIdentifier: default
+  projectIdentifier: kanikatest
+  pipeline:
+    identifier: remotepipelinerepo2
+    template:
+      templateInputs:
+        stages:
+          - stage:
+              identifier: p1
+              template:
+                templateInputs:
+                  type: Custom
+                  variables:
+                    - name: s1
+                      type: String
+                      value: v1
+                    - name: s2
+                      type: String
+                      value: v2

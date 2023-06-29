@@ -18,7 +18,7 @@ pipeline:
                     value: <+input>
                   - name: s2
                     type: String
-                    value: <+input>
+                    value: fixed
   tags: {}
   projectIdentifier: kanikatest
   orgIdentifier: default

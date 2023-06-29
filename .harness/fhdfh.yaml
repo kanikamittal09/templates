@@ -1,5 +1,6 @@
 inputSet:
   name: fhdfh
+  tags: {}
   identifier: fhdfh
   orgIdentifier: default
   projectIdentifier: kanikatest
@@ -17,6 +18,7 @@ inputSet:
                     - name: s1
                       type: String
                       value: v1
-                    - name: s2
-                      type: String
-                      value: v2
+  cacheResponse:
+    cacheState: VALID_CACHE
+    ttlLeft: 86326548
+    lastUpdatedAt: 1688038957845

@@ -1,0 +1,10 @@
+pipeline:
+  name: remote-pipeline-repo2
+  identifier: remotepipelinerepo2
+  template:
+    templateRef: pipelinefeaturerepo1
+    versionLabel: v2
+    gitBranch: new2
+  tags: {}
+  projectIdentifier: kanikatest
+  orgIdentifier: default

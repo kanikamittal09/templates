@@ -24,9 +24,16 @@ template:
                     source:
                       type: Inline
                       spec:
-                        script: echo <+stage.variables.s1>
+                        script: |-
+                          echo <+stage.variables.s1>
+                          echo <+stage.variables.s2>
     variables:
       - name: s1
+        type: String
+        description: ""
+        required: false
+        value: <+input>
+      - name: s2
         type: String
         description: ""
         required: false

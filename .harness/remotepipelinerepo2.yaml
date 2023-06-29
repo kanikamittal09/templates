@@ -5,6 +5,20 @@ pipeline:
     templateRef: pipelinefeaturerepo1
     versionLabel: v2
     gitBranch: new2
+    templateInputs:
+      stages:
+        - stage:
+            identifier: p1
+            template:
+              templateInputs:
+                type: Custom
+                variables:
+                  - name: s1
+                    type: String
+                    value: <+input>
+                  - name: s2
+                    type: String
+                    value: <+input>
   tags: {}
   projectIdentifier: kanikatest
   orgIdentifier: default

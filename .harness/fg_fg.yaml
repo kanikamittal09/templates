@@ -1,0 +1,32 @@
+template:
+  name: fg
+  identifier: fg
+  versionLabel: fg
+  type: Pipeline
+  projectIdentifier: kanikaTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: gjh
+          identifier: gjh
+          tags: {}
+          template:
+            templateRef: h
+            versionLabel: gg
+            templateInputs:
+              type: Custom
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: gfh
+                        template:
+                          templateInputs:
+                            type: Email
+                            spec:
+                              to: <+input>
+                              cc: <+input>
+                              subject: <+input>
+                              body: <+input>
